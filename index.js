@@ -7,19 +7,18 @@
 const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 
-const url = "mongodb://localhost:27017";
-const dbName = "ocean_bancodados_18_11_2021";
+const url = "mongodb+srv://taiz:taiz@cluster0.uei3w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority;
+const dbName = "ocean-backend-nuvem-19-11-2021";
 
 async function main() {
 
-    /*
+    
     const client = await MongoClient.connect(url);
 
     const db = client.db(dbName);
 
     const collection = db.collection("herois");
-    */
-    const collection = undefined;
+    
 
     const app = express();
 
